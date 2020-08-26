@@ -1,0 +1,8 @@
+[ {
+  "buildOrder" : 1,
+  "reportUrl" : "https://allure-examples.github.io/allure-cucumber5-junit4-maven/1/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 248
+  }
+} ]

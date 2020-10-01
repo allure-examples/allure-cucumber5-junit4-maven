@@ -1,0 +1,215 @@
+{
+  "uid" : "7e03d5f77fc75838",
+  "name" : "Delete existing label via api",
+  "fullName" : "Labels: Delete existing label via api",
+  "historyId" : "843df6f6ac7f645bb7d612a7c4fd9f67",
+  "time" : {
+    "start" : 1601527598885,
+    "stop" : 1601527598890,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "When  I create label with title \"hello\" via api",
+      "time" : {
+        "start" : 1601527598885,
+        "stop" : 1601527598886,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST /repos/:owner/:repo/labels",
+        "time" : {
+          "start" : 1601527598885,
+          "stop" : 1601527598885,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "And  I delete label with title \"hello\" via api",
+      "time" : {
+        "start" : 1601527598887,
+        "stop" : 1601527598887,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /repos/:owner/:repo/labels?text=hello",
+        "time" : {
+          "start" : 1601527598887,
+          "stop" : 1601527598887,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "DELETE /repos/:owner/:repo/labels/237",
+        "time" : {
+          "start" : 1601527598887,
+          "stop" : 1601527598887,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 2
+    }, {
+      "name" : "Then  I should not see label with content \"hello\" via api",
+      "time" : {
+        "start" : 1601527598889,
+        "stop" : 1601527598889,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /repos/:owner/:repo/labels?text=hello",
+        "time" : {
+          "start" : 1601527598889,
+          "stop" : 1601527598889,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "GET /repos/:owner/:repo/labels/834",
+        "time" : {
+          "start" : 1601527598889,
+          "stop" : 1601527598889,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 2
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 8
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "regress"
+  }, {
+    "name" : "host",
+    "value" : "fv-az67"
+  }, {
+    "name" : "thread",
+    "value" : "5094@fv-az67.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Labels"
+  }, {
+    "name" : "story",
+    "value" : "Delete existing label via api"
+  }, {
+    "name" : "suite",
+    "value" : "Labels"
+  }, {
+    "name" : "testClass",
+    "value" : "Delete existing label via api"
+  }, {
+    "name" : "framework",
+    "value" : "cucumber4jvm"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "gherkin_uri",
+    "value" : "file:///home/runner/work/allure-cucumber5-junit4-maven/allure-cucumber5-junit4-maven/src/test/resources/features/labels-rest.feature"
+  }, {
+    "name" : "package",
+    "value" : "src.test.resources.features.labels-rest_feature.Labels"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "54a15e87a72467fb",
+        "reportUrl" : "https://allure-examples.github.io/allure-cucumber5-junit4-maven/1//#testresult/54a15e87a72467fb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598459533219,
+          "stop" : 1598459533226,
+          "duration" : 7
+        }
+      } ]
+    },
+    "tags" : [ "regress" ]
+  },
+  "source" : "7e03d5f77fc75838.json",
+  "parameterValues" : [ ]
+}

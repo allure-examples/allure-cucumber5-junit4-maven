@@ -1,0 +1,170 @@
+{
+  "uid" : "12b2507c09396c31",
+  "name" : "Create new label via api",
+  "fullName" : "Labels: Create new label via api",
+  "historyId" : "f9c66bf9ddd19869dacb865700c9ee29",
+  "time" : {
+    "start" : 1601527598788,
+    "stop" : 1601527598800,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "When  I create label with title \"hello\" via api",
+      "time" : {
+        "start" : 1601527598790,
+        "stop" : 1601527598796,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST /repos/:owner/:repo/labels",
+        "time" : {
+          "start" : 1601527598791,
+          "stop" : 1601527598791,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "Then  I should see label with title \"hello\" via api",
+      "time" : {
+        "start" : 1601527598797,
+        "stop" : 1601527598798,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /repos/:owner/:repo/labels?text=hello",
+        "time" : {
+          "start" : 1601527598797,
+          "stop" : 1601527598797,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "GET /repos/:owner/:repo/labels/834",
+        "time" : {
+          "start" : 1601527598797,
+          "stop" : 1601527598797,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 2
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 5
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "host",
+    "value" : "fv-az67"
+  }, {
+    "name" : "thread",
+    "value" : "5094@fv-az67.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Labels"
+  }, {
+    "name" : "story",
+    "value" : "Create new label via api"
+  }, {
+    "name" : "suite",
+    "value" : "Labels"
+  }, {
+    "name" : "testClass",
+    "value" : "Create new label via api"
+  }, {
+    "name" : "framework",
+    "value" : "cucumber4jvm"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "gherkin_uri",
+    "value" : "file:///home/runner/work/allure-cucumber5-junit4-maven/allure-cucumber5-junit4-maven/src/test/resources/features/labels-rest.feature"
+  }, {
+    "name" : "package",
+    "value" : "src.test.resources.features.labels-rest_feature.Labels"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "ea5fb2075066c8c5",
+        "reportUrl" : "https://allure-examples.github.io/allure-cucumber5-junit4-maven/1//#testresult/ea5fb2075066c8c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598459533108,
+          "stop" : 1598459533121,
+          "duration" : 13
+        }
+      } ]
+    },
+    "tags" : [ "smoke" ]
+  },
+  "source" : "12b2507c09396c31.json",
+  "parameterValues" : [ ]
+}

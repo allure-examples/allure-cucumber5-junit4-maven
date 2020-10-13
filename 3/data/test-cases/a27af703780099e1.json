@@ -1,0 +1,175 @@
+{
+  "uid" : "a27af703780099e1",
+  "name" : "Delete existing label for authorized user",
+  "fullName" : "Labels: Delete existing label for authorized user",
+  "historyId" : "3b99172849a956d077462dbdc8532625",
+  "time" : {
+    "start" : 1602556441712,
+    "stop" : 1602556441717,
+    "duration" : 5
+  },
+  "status" : "broken",
+  "statusMessage" : "Element not found for xpath [//div[@class='something']]",
+  "statusTrace" : "java.lang.RuntimeException: Element not found for xpath [//div[@class='something']]\n\tat io.qameta.allure.examples.cucumber5.WebSteps.maybeThrowElementNotFoundException(WebSteps.java:89)\n\tat io.qameta.allure.examples.cucumber5.WebSteps.createLabelWithTitle(WebSteps.java:29)\n\tat ✽.I create label with title \"hello\"(file:///home/runner/work/allure-cucumber5-junit4-maven/allure-cucumber5-junit4-maven/src/test/resources/features/labels-web.feature:26)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Element not found for xpath [//div[@class='something']]",
+    "statusTrace" : "java.lang.RuntimeException: Element not found for xpath [//div[@class='something']]\n\tat io.qameta.allure.examples.cucumber5.WebSteps.maybeThrowElementNotFoundException(WebSteps.java:89)\n\tat io.qameta.allure.examples.cucumber5.WebSteps.createLabelWithTitle(WebSteps.java:29)\n\tat ✽.I create label with title \"hello\"(file:///home/runner/work/allure-cucumber5-junit4-maven/allure-cucumber5-junit4-maven/src/test/resources/features/labels-web.feature:26)\n",
+    "steps" : [ {
+      "name" : "When  I open labels page",
+      "time" : {
+        "start" : 1602556441713,
+        "stop" : 1602556441713,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I create label with title \"hello\"",
+      "time" : {
+        "start" : 1602556441713,
+        "stop" : 1602556441714,
+        "duration" : 1
+      },
+      "status" : "broken",
+      "statusMessage" : "Element not found for xpath [//div[@class='something']]",
+      "statusTrace" : "java.lang.RuntimeException: Element not found for xpath [//div[@class='something']]\n\tat io.qameta.allure.examples.cucumber5.WebSteps.maybeThrowElementNotFoundException(WebSteps.java:89)\n\tat io.qameta.allure.examples.cucumber5.WebSteps.createLabelWithTitle(WebSteps.java:29)\n\tat ✽.I create label with title \"hello\"(file:///home/runner/work/allure-cucumber5-junit4-maven/allure-cucumber5-junit4-maven/src/test/resources/features/labels-web.feature:26)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "And  I delete label with title \"hello\"",
+      "time" : {
+        "start" : 1602556441714,
+        "stop" : 1602556441715,
+        "duration" : 1
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then  I should not see note with content \"hello\"",
+      "time" : {
+        "start" : 1602556441716,
+        "stop" : 1602556441716,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "host",
+    "value" : "fv-az183"
+  }, {
+    "name" : "thread",
+    "value" : "4061@fv-az183.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Labels"
+  }, {
+    "name" : "story",
+    "value" : "Delete existing label for authorized user"
+  }, {
+    "name" : "suite",
+    "value" : "Labels"
+  }, {
+    "name" : "testClass",
+    "value" : "Delete existing label for authorized user"
+  }, {
+    "name" : "framework",
+    "value" : "cucumber4jvm"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "gherkin_uri",
+    "value" : "file:///home/runner/work/allure-cucumber5-junit4-maven/allure-cucumber5-junit4-maven/src/test/resources/features/labels-web.feature"
+  }, {
+    "name" : "package",
+    "value" : "src.test.resources.features.labels-web_feature.Labels"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "efdcec216492d063",
+        "reportUrl" : "https://allure-examples.github.io/allure-cucumber5-junit4-maven/2//#testresult/efdcec216492d063",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601527598925,
+          "stop" : 1601527600934,
+          "duration" : 2009
+        }
+      }, {
+        "uid" : "808c383332874b2f",
+        "reportUrl" : "https://allure-examples.github.io/allure-cucumber5-junit4-maven/1//#testresult/808c383332874b2f",
+        "status" : "broken",
+        "statusDetails" : "Element not found for xpath [//div[@class='something']]",
+        "time" : {
+          "start" : 1598459533304,
+          "stop" : 1598459533313,
+          "duration" : 9
+        }
+      } ]
+    },
+    "tags" : [ "smoke" ]
+  },
+  "source" : "a27af703780099e1.json",
+  "parameterValues" : [ ]
+}
